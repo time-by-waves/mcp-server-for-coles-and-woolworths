@@ -11,7 +11,7 @@ param (
 )
 
 # Define the port to listen on
-$prefix = "$hostPrefix:$port/"
+$prefix = "$( $hostPrefix ):$( $port )/"
 
 # Create and start the HTTP listener
 $listener = New-Object System.Net.HttpListener
